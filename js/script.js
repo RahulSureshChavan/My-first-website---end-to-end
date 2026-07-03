@@ -36,6 +36,25 @@
       statsWrap.appendChild(item);
     });
 
+    // photo
+    const photoWrap = document.getElementById("hero-photo-wrap");
+    const photoImg = document.getElementById("hero-photo");
+    if (d.hero.photo) {
+      photoImg.onerror = () => photoWrap.classList.add("empty");
+      photoImg.onload = () => photoWrap.classList.remove("empty");
+      photoImg.src = d.hero.photo;
+      photoImg.alt = d.hero.name;
+    } else {
+      photoWrap.classList.add("empty");
+    }
+
+    // pipeline labels
+    if (d.pipeline) {
+      document.getElementById("pipe-label-raw").textContent = d.pipeline.raw;
+      document.getElementById("pipe-label-dwh").textContent = d.pipeline.dwh;
+      document.getElementById("pipe-label-bi").textContent = d.pipeline.bi;
+    }
+
     // about
     document.getElementById("about-body").textContent = d.about.body;
     const cv = document.getElementById("about-cv");
@@ -93,6 +112,35 @@
       timeline.appendChild(item);
     });
 
+    // education
+    const degreeList = document.getElementById("degree-list");
+    degreeList.innerHTML = "";
+    (d.education.degrees || []).forEach((deg) => {
+      const item = el("div", "degree-item");
+      item.appendChild(el("div", "degree-title", deg.degree));
+      item.appendChild(el("div", "degree-school", deg.school));
+      item.appendChild(el("div", "degree-period", deg.period));
+      degreeList.appendChild(item);
+    });
+
+    const certList = document.getElementById("cert-list");
+    certList.innerHTML = "";
+    certList.appendChild(el("span", "eyebrow", LANG === "de" ? "ZERTIFIZIERUNGEN" : "CERTIFICATIONS"));
+    (d.education.certifications || []).forEach((c) => {
+      certList.appendChild(el("div", "cert-item", c));
+    });
+
+    const langList = document.getElementById("lang-list");
+    langList.innerHTML = "";
+    langList.appendChild(el("span", "eyebrow", LANG === "de" ? "SPRACHEN" : "LANGUAGES"));
+    (d.education.languages || []).forEach((l) => {
+      const row = el("div", "lang-item");
+      const strong = el("strong", null, l.name);
+      row.appendChild(strong);
+      row.appendChild(document.createTextNode(" — " + l.level));
+      langList.appendChild(row);
+    });
+
     // contact
     document.getElementById("contact-heading").textContent = d.contact.heading;
     document.getElementById("contact-body").textContent = d.contact.body;
@@ -100,16 +148,31 @@
     links.innerHTML = "";
     const email = el("a", null, `✉ ${d.contact.email}`);
     email.href = `mailto:${d.contact.email}`;
+    links.appendChild(email);
+
+    if (d.contact.phone) {
+      const phone = el("a", null, `☎ ${d.contact.phone}`);
+      phone.href = `tel:${d.contact.phone.replace(/\s+/g, "")}`;
+      links.appendChild(phone);
+    }
+
     const li = el("a", null, "↗ LinkedIn");
     li.href = d.contact.linkedin;
     li.target = "_blank"; li.rel = "noopener";
+    links.appendChild(li);
+
+    if (d.contact.github) {
+      const gh = el("a", null, "↗ GitHub");
+      gh.href = d.contact.github;
+      gh.target = "_blank"; gh.rel = "noopener";
+      links.appendChild(gh);
+    }
+
     const loc = el("div", null, `📍 ${d.contact.location}`);
     loc.style.fontFamily = "var(--mono)";
     loc.style.fontSize = "13px";
     loc.style.color = "#B9C0D4";
     loc.style.marginTop = "4px";
-    links.appendChild(email);
-    links.appendChild(li);
     links.appendChild(loc);
 
     document.getElementById("footer-text").textContent =

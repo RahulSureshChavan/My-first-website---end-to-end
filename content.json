@@ -1,7 +1,7 @@
 {
   "en": {
     "meta": {
-      "title": "Rahul — Senior Data Analyst",
+      "title": "Rahul Suresh Chavan — Data Analyst",
       "tagline": "Data Analyst · Magdeburg, Germany"
     },
     "nav": {
@@ -9,59 +9,83 @@
       "skills": "Skills",
       "projects": "Projects",
       "experience": "Experience",
+      "education": "Education",
       "contact": "Contact"
     },
     "hero": {
+      "photo": "assets/photo.jpg",
       "eyebrow": "SELECT * FROM analyst WHERE impact = true;",
-      "name": "Rahul",
-      "role": "Senior Data Analyst",
-      "subtitle": "I turn messy business data into decisions — dashboards, pipelines and forecasts for retail, supply chain and finance teams.",
+      "name": "Rahul Suresh Chavan",
+      "role": "Data Analyst — Data Warehousing & Business Intelligence",
+      "subtitle": "I turn raw operational and financial data into decisions — SQL data warehouses, Power BI dashboards and forecasting models for Finance, Sales and Supply Chain teams.",
       "cta_primary": "View projects",
       "cta_secondary": "Get in touch",
       "stats": [
-        { "value": "4+", "label": "years experience" },
-        { "value": "SQL / DAX / Python", "label": "core stack" },
-        { "value": "DE / EN", "label": "working languages" }
+        { "value": "4+", "label": "years cross-functional experience" },
+        { "value": "SQL · Power BI · Python", "label": "core stack" },
+        { "value": "DE (B2→C1) / EN (C1)", "label": "working languages" }
       ]
     },
+    "pipeline": { "raw": "Raw Data", "dwh": "Data Warehouse", "bi": "Power BI" },
     "about": {
       "heading": "About me",
-      "body": "I'm a data analyst based in Magdeburg, Germany, with hands-on experience across retail, e-commerce, supply chain and finance/controlling. I build the layer between raw data and good decisions — from SQL data warehouses to Power BI dashboards and forecasting models. Previously at Flink, BASF New Business and TCS Deutschland. I hold an M.Eng. in International Business and Engineering from SRH Hochschule Heidelberg, and I'm currently building my German toward C1.",
+      "body": "I'm a data analyst based in Magdeburg, Germany, with 4+ years of cross-functional experience across Finance, Sales, Supply Chain and E-Commerce operations. I build the layer between raw data and good decisions — from SQL Server data warehouses to Power BI dashboards and demand-forecasting models. Previously at TCS Deutschland (client: Microsoft Deutschland), Flink and BASF New Business. Immediately available, relocation-ready, and holding a valid German work visa.",
       "resume_label": "Download CV",
-      "resume_file": ""
+      "resume_file": "assets/Rahul_Suresh_Chavan_CV.pdf"
     },
     "skills": {
       "heading": "Skills",
       "groups": [
-        { "title": "Languages & Query", "items": ["SQL", "Python", "DAX"] },
-        { "title": "BI & Reporting", "items": ["Power BI", "SAP Analytics Cloud"] },
-        { "title": "Data Engineering", "items": ["dbt", "BigQuery", "SAP ERP"] },
-        { "title": "Other", "items": ["German (B2 → C1)", "English (Fluent)"] }
+        { "title": "Languages & Query", "items": ["SQL (MS SQL, MySQL, PostgreSQL, BigQuery)", "Python (Pandas, NumPy, Matplotlib)", "DAX", "VBA"] },
+        { "title": "BI & Reporting", "items": ["Power BI", "Power Query", "SAP Analytics Cloud", "Tableau", "Looker Studio"] },
+        { "title": "Data Engineering", "items": ["ETL / ELT pipeline design", "Star schema modelling", "Stored procedures & window functions", "Azure Data Factory", "Microsoft Fabric", "dbt (basics)"] },
+        { "title": "Business Domains", "items": ["P&L reporting & forecasting", "Sales & CRM analytics", "Supply chain KPIs: OTIF, LIFR, VOFR", "Stakeholder reporting"] }
       ]
     },
     "projects": {
       "heading": "Projects",
-      "subheading": "A selection of end-to-end data work. Replace these with your real projects in the editor.",
+      "subheading": "End-to-end data work spanning Finance, Sales and Supply Chain.",
       "items": [
         {
-          "title": "Modern Data Warehouse (MS SQL)",
-          "tag": "Data Engineering",
-          "description": "Designed and built an end-to-end SQL data warehouse with staging, star-schema modelling and SCD Type 2 handling for historical accuracy.",
-          "stack": ["SQL Server", "SSIS", "Star Schema"],
-          "link": ""
-        },
-        {
-          "title": "Retail KPI Dashboard",
+          "title": "Business Insights 360 — Integrated Commercial Reporting",
           "tag": "Business Intelligence",
-          "description": "Built a Power BI dashboard tracking OTIF, LIFR and VOFR logistics KPIs for supply chain stakeholders, cutting manual reporting time significantly.",
-          "stack": ["Power BI", "DAX", "SQL"],
+          "description": "Replaced siloed Excel files with a unified Power BI platform covering Finance P&L, Sales funnel performance, Marketing ROI and Supply Chain KPIs, cutting report generation time by 60% and enabling integrated cross-functional decisions.",
+          "stack": ["Power BI", "DAX", "Finance", "Sales", "Supply Chain"],
           "link": ""
         },
         {
-          "title": "Text-to-SQL AI Agent",
-          "tag": "AI / Automation",
-          "description": "A natural-language query assistant that translates plain English questions into SQL, letting non-technical stakeholders explore data directly.",
-          "stack": ["Python", "LLM APIs", "SQL"],
+          "title": "Supply Chain Performance Dashboard",
+          "tag": "Business Intelligence",
+          "description": "Built a 5-page interactive Power BI dashboard analysing delivery issues across customer, city and product-category dimensions, with advanced DAX and drill-through reporting for OTIF, LIFR and VOFR KPIs.",
+          "stack": ["Power BI", "DAX", "OTIF / LIFR / VOFR"],
+          "link": ""
+        },
+        {
+          "title": "SQL Analytics Solution — Multi-Domain Intelligence",
+          "tag": "Data Engineering",
+          "description": "Designed a multi-domain analytics layer spanning Sales, Finance and Supply Chain (1M+ records) using stored procedures and window functions, delivering regional margin analyses that guided procurement and revenue strategy.",
+          "stack": ["MySQL", "BigQuery", "Stored Procedures"],
+          "link": ""
+        },
+        {
+          "title": "End-to-End Data Warehouse — Product & Customer Insights",
+          "tag": "Data Engineering",
+          "description": "Built an end-to-end SQL Server data warehouse with star-schema modelling, CTEs and window functions, plus automated reporting views for customer segmentation and performance analysis.",
+          "stack": ["SQL Server", "Star Schema", "CTEs"],
+          "link": ""
+        },
+        {
+          "title": "Sales & Margin Performance Model",
+          "tag": "Financial Modelling",
+          "description": "Dynamic Excel model tracking Revenue, Discounts, Net Sales, COGS and Gross Margin by region, with forecast-vs-actual variance analysis and automated KPI reporting via pivot models.",
+          "stack": ["Advanced Excel", "Pivot Tables", "Scenario Analysis"],
+          "link": ""
+        },
+        {
+          "title": "Exploratory Data Analysis — Sales Dataset",
+          "tag": "AI / Analytics",
+          "description": "Structured exploratory analysis of transactional sales data to identify revenue seasonality and product performance trends, using statistical summaries to detect margin variability.",
+          "stack": ["Python", "Pandas", "Matplotlib"],
           "link": ""
         }
       ]
@@ -70,39 +94,62 @@
       "heading": "Experience",
       "items": [
         {
-          "role": "Data Analyst",
-          "company": "Flink",
-          "period": "20XX — 20XX",
-          "description": "Replace with your real responsibilities and measurable outcomes."
+          "role": "Professional Development — Data Analytics Portfolio",
+          "company": "Independent",
+          "period": "08/2025 — present",
+          "description": "In-depth study of Power BI, SQL and Python (Codebasics Data Analytics Bootcamp 3.0), building a practical analytics portfolio focused on reporting automation and data modelling, alongside continued German language study (B2 → C1)."
         },
         {
-          "role": "Data Analyst",
-          "company": "BASF New Business GmbH",
-          "period": "20XX — 20XX",
-          "description": "Replace with your real responsibilities and measurable outcomes."
+          "role": "IT Project Analyst — IT Asset & Reporting Analytics",
+          "company": "TCS Deutschland (Client: Microsoft Deutschland), Munich",
+          "period": "01/2023 — 07/2025",
+          "description": "Designed and maintained structured IT asset reporting datasets with SQL and Advanced Excel, improving reporting accuracy by 30%. Produced monthly IT asset lifecycle reports for Finance covering procurement, reuse and recycling. Built demand-forecasting models from historical procurement data using Power Query and VBA. Automated reporting workflows via Power Query, VBA and Power Automate, cutting manual effort by 60%. Analysed telecom tariff data to identify cost-optimisation opportunities."
         },
         {
-          "role": "Analyst",
-          "company": "TCS Deutschland",
-          "period": "20XX — 20XX",
-          "description": "Replace with your real responsibilities and measurable outcomes."
+          "role": "Data & Inventory Analyst",
+          "company": "Flink, Mannheim",
+          "period": "12/2021 — 12/2022",
+          "description": "Monitored real-time inventory and logistics data to identify supply-chain bottlenecks, improving hub-level operational efficiency by 20%. Built rider-retention analyses and operational reports supporting hub-management staffing and route decisions. Ensured data quality through systematic audits across reporting systems."
+        },
+        {
+          "role": "Market Research & Commercial Intelligence Intern",
+          "company": "BASF New Business GmbH, Ludwigshafen",
+          "period": "03/2020 — 09/2020",
+          "description": "Built quantitative Excel dashboards for competitive benchmarking, reducing management research consolidation time by ~25%. Aggregated data from PitchBook, Crunchbase and Capital IQ for venture-capital trend analysis and supported market-entry analysis via customer segmentation."
         }
+      ]
+    },
+    "education": {
+      "heading": "Education & Certifications",
+      "degrees": [
+        { "degree": "M.Eng. — International Business & Engineering", "school": "SRH Hochschule Heidelberg, Germany", "period": "2018 — 2021" },
+        { "degree": "B.Eng. — Mechanical Engineering", "school": "NIE Institute of Technology, Mysuru, India", "period": "2013 — 2017" }
+      ],
+      "certifications": [
+        "In progress: Codebasics Data Analytics Bootcamp 3.0",
+        "Completed: Google Data Analytics Professional Certificate (Coursera)"
+      ],
+      "languages": [
+        { "name": "German", "level": "B2 — Advanced, working toward C1" },
+        { "name": "English", "level": "C1 — Fluent, full professional proficiency" }
       ]
     },
     "contact": {
       "heading": "Let's work together",
-      "body": "Open to Senior Data Analyst roles and freelance data/BI projects across Germany and remotely.",
-      "email": "your.email@example.com",
-      "linkedin": "https://linkedin.com/in/your-profile",
+      "body": "Open to Data Analyst / BI roles and freelance data projects across Germany and remotely. Immediately available.",
+      "email": "rahulsuresh.chavan@icloud.com",
+      "phone": "+49 1628507605",
+      "linkedin": "https://www.linkedin.com/in/rahul-suresh-chavan-737baaa7/",
+      "github": "https://github.com/RahulSureshChavan",
       "location": "Magdeburg, Germany"
     },
     "footer": {
-      "text": "Built by Rahul."
+      "text": "Built by Rahul Suresh Chavan."
     }
   },
   "de": {
     "meta": {
-      "title": "Rahul — Senior Data Analyst",
+      "title": "Rahul Suresh Chavan — Data Analyst",
       "tagline": "Data Analyst · Magdeburg, Deutschland"
     },
     "nav": {
@@ -110,59 +157,83 @@
       "skills": "Fähigkeiten",
       "projects": "Projekte",
       "experience": "Erfahrung",
+      "education": "Ausbildung",
       "contact": "Kontakt"
     },
     "hero": {
+      "photo": "assets/photo.jpg",
       "eyebrow": "SELECT * FROM analyst WHERE impact = true;",
-      "name": "Rahul",
-      "role": "Senior Data Analyst",
-      "subtitle": "Ich verwandle unübersichtliche Geschäftsdaten in klare Entscheidungen — Dashboards, Pipelines und Prognosen für Teams aus Handel, Supply Chain und Finance.",
+      "name": "Rahul Suresh Chavan",
+      "role": "Data Analyst — Data Warehousing & Business Intelligence",
+      "subtitle": "Ich verwandle operative und finanzielle Rohdaten in Entscheidungen — SQL-Data-Warehouses, Power-BI-Dashboards und Prognosemodelle für Finance-, Sales- und Supply-Chain-Teams.",
       "cta_primary": "Projekte ansehen",
       "cta_secondary": "Kontakt aufnehmen",
       "stats": [
-        { "value": "4+", "label": "Jahre Erfahrung" },
-        { "value": "SQL / DAX / Python", "label": "Kern-Skills" },
-        { "value": "DE / EN", "label": "Arbeitssprachen" }
+        { "value": "4+", "label": "Jahre cross-funktionale Erfahrung" },
+        { "value": "SQL · Power BI · Python", "label": "Kern-Skills" },
+        { "value": "DE (B2→C1) / EN (C1)", "label": "Arbeitssprachen" }
       ]
     },
+    "pipeline": { "raw": "Rohdaten", "dwh": "Data Warehouse", "bi": "Power BI" },
     "about": {
       "heading": "Über mich",
-      "body": "Ich bin Data Analyst mit Sitz in Magdeburg und praktischer Erfahrung in Handel, E-Commerce, Supply Chain und Finance/Controlling. Ich baue die Brücke zwischen Rohdaten und guten Entscheidungen — von SQL-Data-Warehouses über Power-BI-Dashboards bis hin zu Prognosemodellen. Zuvor bei Flink, BASF New Business und TCS Deutschland. Ich habe einen M.Eng. in International Business and Engineering von der SRH Hochschule Heidelberg und arbeite aktuell an meinem Deutsch auf C1-Niveau.",
+      "body": "Ich bin Data Analyst mit Sitz in Magdeburg und über 4 Jahren cross-funktionaler Erfahrung in Finance, Sales, Supply Chain und E-Commerce-Operations. Ich baue die Brücke zwischen Rohdaten und guten Entscheidungen — von SQL-Server-Data-Warehouses über Power-BI-Dashboards bis hin zu Bedarfsprognosemodellen. Zuvor bei TCS Deutschland (Kunde: Microsoft Deutschland), Flink und BASF New Business. Sofort verfügbar, umzugsbereit und mit gültigem deutschem Arbeitsvisum.",
       "resume_label": "Lebenslauf herunterladen",
-      "resume_file": ""
+      "resume_file": "assets/Rahul_Suresh_Chavan_CV.pdf"
     },
     "skills": {
       "heading": "Fähigkeiten",
       "groups": [
-        { "title": "Sprachen & Abfragen", "items": ["SQL", "Python", "DAX"] },
-        { "title": "BI & Reporting", "items": ["Power BI", "SAP Analytics Cloud"] },
-        { "title": "Data Engineering", "items": ["dbt", "BigQuery", "SAP ERP"] },
-        { "title": "Weitere", "items": ["Deutsch (B2 → C1)", "Englisch (Fließend)"] }
+        { "title": "Sprachen & Abfragen", "items": ["SQL (MS SQL, MySQL, PostgreSQL, BigQuery)", "Python (Pandas, NumPy, Matplotlib)", "DAX", "VBA"] },
+        { "title": "BI & Reporting", "items": ["Power BI", "Power Query", "SAP Analytics Cloud", "Tableau", "Looker Studio"] },
+        { "title": "Data Engineering", "items": ["ETL-/ELT-Pipeline-Design", "Star-Schema-Modellierung", "Stored Procedures & Window Functions", "Azure Data Factory", "Microsoft Fabric", "dbt (Grundlagen)"] },
+        { "title": "Fachbereiche", "items": ["P&L-Reporting & Forecasting", "Sales- & CRM-Analytics", "Supply-Chain-KPIs: OTIF, LIFR, VOFR", "Stakeholder-Reporting"] }
       ]
     },
     "projects": {
       "heading": "Projekte",
-      "subheading": "Eine Auswahl an End-to-End-Datenprojekten. Ersetze diese im Editor durch deine echten Projekte.",
+      "subheading": "End-to-End-Datenprojekte aus Finance, Sales und Supply Chain.",
       "items": [
         {
-          "title": "Modernes Data Warehouse (MS SQL)",
-          "tag": "Data Engineering",
-          "description": "Entwurf und Aufbau eines End-to-End SQL-Data-Warehouse mit Staging, Star-Schema-Modellierung und SCD Typ 2 für historische Genauigkeit.",
-          "stack": ["SQL Server", "SSIS", "Star Schema"],
-          "link": ""
-        },
-        {
-          "title": "Retail-KPI-Dashboard",
+          "title": "Business Insights 360 — Integriertes Kommerzielles Reporting",
           "tag": "Business Intelligence",
-          "description": "Power-BI-Dashboard zur Verfolgung von OTIF-, LIFR- und VOFR-Logistik-KPIs für Supply-Chain-Stakeholder, das den manuellen Reporting-Aufwand deutlich reduzierte.",
-          "stack": ["Power BI", "DAX", "SQL"],
+          "description": "Ablösung isolierter Excel-Dateien durch eine einheitliche Power-BI-Plattform für Finance-P&L, Sales-Funnel, Marketing-ROI und Supply-Chain-KPIs — Reduktion der Report-Erstellungszeit um 60 % und verbesserte funktionsübergreifende Entscheidungen.",
+          "stack": ["Power BI", "DAX", "Finance", "Sales", "Supply Chain"],
           "link": ""
         },
         {
-          "title": "Text-to-SQL KI-Agent",
-          "tag": "KI / Automatisierung",
-          "description": "Ein Sprachassistent, der natürlichsprachige Fragen in SQL übersetzt und so fachfremden Stakeholdern direkten Datenzugriff ermöglicht.",
-          "stack": ["Python", "LLM APIs", "SQL"],
+          "title": "Supply Chain Performance Dashboard",
+          "tag": "Business Intelligence",
+          "description": "Entwicklung eines 5-seitigen interaktiven Power-BI-Dashboards zur Analyse von Lieferproblemen über Kunden-, Städte- und Produktkategoriedimensionen mit fortgeschrittenen DAX-Berechnungen und Drill-Through-Reporting für OTIF-, LIFR- und VOFR-KPIs.",
+          "stack": ["Power BI", "DAX", "OTIF / LIFR / VOFR"],
+          "link": ""
+        },
+        {
+          "title": "SQL Analytics Solution — Multi-Domain Intelligence",
+          "tag": "Data Engineering",
+          "description": "Entwicklung einer Multi-Domain-Analytics-Schicht für Sales, Finance und Supply Chain (>1 Mio. Datensätze) mit Stored Procedures und Window Functions sowie regionalen Margenanalysen zur Unterstützung von Beschaffungs- und Umsatzstrategien.",
+          "stack": ["MySQL", "BigQuery", "Stored Procedures"],
+          "link": ""
+        },
+        {
+          "title": "End-to-End Data Warehouse — Product & Customer Insights",
+          "tag": "Data Engineering",
+          "description": "Aufbau eines End-to-End SQL-Server-Data-Warehouse mit Star-Schema-Modellierung, CTEs und Window Functions sowie automatisierten Reporting-Views für Kundensegmentierung und Performance-Analysen.",
+          "stack": ["SQL Server", "Star Schema", "CTEs"],
+          "link": ""
+        },
+        {
+          "title": "Sales & Margin Performance Model",
+          "tag": "Finanzmodellierung",
+          "description": "Dynamisches Excel-Modell zur Analyse von Revenue, Discounts, Net Sales, COGS und Gross Margin nach Regionen, mit Forecast-vs-Actual-Abweichungsanalyse und automatisiertem KPI-Reporting über Pivot-Modelle.",
+          "stack": ["Advanced Excel", "Pivot Tables", "Szenarioanalyse"],
+          "link": ""
+        },
+        {
+          "title": "Exploratory Data Analysis — Sales Dataset",
+          "tag": "KI / Analytics",
+          "description": "Strukturierte explorative Analyse von Transaktionsdaten zur Identifikation von Umsatz-Saisonalität und Produkt-Performance-Trends mittels statistischer Auswertung von Margenschwankungen.",
+          "stack": ["Python", "Pandas", "Matplotlib"],
           "link": ""
         }
       ]
@@ -171,34 +242,57 @@
       "heading": "Erfahrung",
       "items": [
         {
-          "role": "Data Analyst",
-          "company": "Flink",
-          "period": "20XX — 20XX",
-          "description": "Ersetze dies durch deine echten Aufgaben und messbaren Ergebnisse."
+          "role": "Berufliche Weiterbildung — Data-Analytics-Portfolio",
+          "company": "Eigenständig",
+          "period": "08/2025 — heute",
+          "description": "Vertiefte Einarbeitung in Power BI, SQL und Python (Codebasics Data Analytics Bootcamp 3.0), Aufbau eines praxisnahen Analytics-Portfolios mit Fokus auf Reporting-Automatisierung und Datenmodellierung, sowie kontinuierlicher Ausbau der Deutschkenntnisse (B2 → C1)."
         },
         {
-          "role": "Data Analyst",
-          "company": "BASF New Business GmbH",
-          "period": "20XX — 20XX",
-          "description": "Ersetze dies durch deine echten Aufgaben und messbaren Ergebnisse."
+          "role": "IT Project Analyst — IT Asset & Reporting Analytics",
+          "company": "TCS Deutschland (Kunde: Microsoft Deutschland), München",
+          "period": "01/2023 — 07/2025",
+          "description": "Entwicklung und Pflege strukturierter IT-Asset-Reporting-Datensätze mit SQL und Advanced Excel, Verbesserung der Reporting-Genauigkeit um 30 %. Erstellung monatlicher IT-Asset-Lifecycle-Reports für Finance zu Beschaffung, Wiederverwendung und Recycling. Entwicklung von Beschaffungsprognosemodellen mittels Power Query und VBA. Automatisierung von Reporting-Workflows über Power Query, VBA und Power Automate, Reduktion des manuellen Aufwands um 60 %. Analyse von Telekommunikationstarifdaten zur Identifikation von Kosteneinsparpotenzialen."
         },
         {
-          "role": "Analyst",
-          "company": "TCS Deutschland",
-          "period": "20XX — 20XX",
-          "description": "Ersetze dies durch deine echten Aufgaben und messbaren Ergebnisse."
+          "role": "Data & Inventory Analyst",
+          "company": "Flink, Mannheim",
+          "period": "12/2021 — 12/2022",
+          "description": "Überwachung von Echtzeit-Bestands- und Logistikdaten zur Identifikation von Supply-Chain-Engpässen, Verbesserung der operativen Hub-Effizienz um 20 %. Entwicklung von Retention-Analysen für Rider sowie operativen Prozessreports zur Unterstützung von Personalplanungs- und Routenentscheidungen. Sicherstellung der Datenqualität durch systematische Audits."
+        },
+        {
+          "role": "Market Research & Commercial Intelligence Intern",
+          "company": "BASF New Business GmbH, Ludwigshafen",
+          "period": "03/2020 — 09/2020",
+          "description": "Entwicklung quantitativer Excel-Dashboards für Wettbewerbsanalysen, Reduzierung des Konsolidierungsaufwands für Management-Research um ca. 25 %. Aggregation von Daten aus PitchBook, Crunchbase und Capital IQ für Venture-Capital-Trendanalysen sowie Unterstützung von Markteintrittsanalysen durch Kundensegmentierung."
         }
+      ]
+    },
+    "education": {
+      "heading": "Ausbildung & Zertifizierungen",
+      "degrees": [
+        { "degree": "M.Eng. — International Business & Engineering", "school": "SRH Hochschule Heidelberg, Deutschland", "period": "2018 — 2021" },
+        { "degree": "B.Eng. — Maschinenbau", "school": "NIE Institute of Technology, Mysuru, Indien", "period": "2013 — 2017" }
+      ],
+      "certifications": [
+        "In Bearbeitung: Codebasics Data Analytics Bootcamp 3.0",
+        "Abgeschlossen: Google Data Analytics Professional Certificate (Coursera)"
+      ],
+      "languages": [
+        { "name": "Deutsch", "level": "B2 — Fortgeschritten, in Weiterentwicklung Richtung C1" },
+        { "name": "Englisch", "level": "C1 — Fließend, verhandlungssicher" }
       ]
     },
     "contact": {
       "heading": "Lass uns zusammenarbeiten",
-      "body": "Offen für Senior-Data-Analyst-Positionen und freiberufliche Daten-/BI-Projekte in Deutschland und remote.",
-      "email": "your.email@example.com",
-      "linkedin": "https://linkedin.com/in/your-profile",
+      "body": "Offen für Data-Analyst-/BI-Positionen und freiberufliche Datenprojekte in Deutschland und remote. Sofort verfügbar.",
+      "email": "rahulsuresh.chavan@icloud.com",
+      "phone": "+49 1628507605",
+      "linkedin": "https://www.linkedin.com/in/rahul-suresh-chavan-737baaa7/",
+      "github": "https://github.com/RahulSureshChavan",
       "location": "Magdeburg, Deutschland"
     },
     "footer": {
-      "text": "Erstellt von Rahul."
+      "text": "Erstellt von Rahul Suresh Chavan."
     }
   }
 }

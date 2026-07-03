@@ -20,6 +20,7 @@
       <a href="#skills" data-i18n="nav.skills">Skills</a>
       <a href="#projects" data-i18n="nav.projects">Projects</a>
       <a href="#experience" data-i18n="nav.experience">Experience</a>
+      <a href="#education" data-i18n="nav.education">Education</a>
       <a href="#contact" data-i18n="nav.contact">Contact</a>
       <div class="lang-toggle" role="group" aria-label="Language">
         <button data-lang="en" class="active">EN</button>
@@ -32,17 +33,47 @@
 
 <section class="hero">
   <div class="wrap">
-    <div class="hero-eyebrow eyebrow" data-i18n="hero.eyebrow">SELECT * FROM analyst WHERE impact = true;</div>
-    <h1>
-      <span id="hero-name">Rahul</span>
-      <span class="role" id="hero-role">Senior Data Analyst</span>
-    </h1>
-    <p class="hero-subtitle" data-i18n="hero.subtitle"></p>
-    <div class="hero-cta">
-      <a href="#projects" class="btn btn-primary" data-i18n="hero.cta_primary"></a>
-      <a href="#contact" class="btn btn-secondary" data-i18n="hero.cta_secondary"></a>
+    <div class="hero-inner">
+      <div class="hero-copy">
+        <div class="hero-eyebrow eyebrow" data-i18n="hero.eyebrow">SELECT * FROM analyst WHERE impact = true;</div>
+        <h1>
+          <span id="hero-name">Rahul</span>
+          <span class="role" id="hero-role">Senior Data Analyst</span>
+        </h1>
+        <p class="hero-subtitle" data-i18n="hero.subtitle"></p>
+        <div class="hero-cta">
+          <a href="#projects" class="btn btn-primary" data-i18n="hero.cta_primary"></a>
+          <a href="#contact" class="btn btn-secondary" data-i18n="hero.cta_secondary"></a>
+        </div>
+      </div>
+      <div class="hero-photo-wrap" id="hero-photo-wrap">
+        <img id="hero-photo" src="" alt="" class="hero-photo" />
+      </div>
     </div>
     <div class="hero-stats" id="hero-stats"></div>
+
+    <div class="pipeline-strip reveal" aria-hidden="true">
+      <div class="pipe-node">
+        <div class="pipe-icon">
+          <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="5" cy="6" r="1.6"/><circle cx="12" cy="4" r="1.6"/><circle cx="18" cy="8" r="1.6"/><circle cx="7" cy="14" r="1.6"/><circle cx="15" cy="15" r="1.6"/><circle cx="10" cy="19" r="1.6"/></svg>
+        </div>
+        <span id="pipe-label-raw">Raw Data</span>
+      </div>
+      <div class="pipe-line"><span class="dot d1"></span><span class="dot d2"></span><span class="dot d3"></span></div>
+      <div class="pipe-node">
+        <div class="pipe-icon">
+          <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.6"><ellipse cx="12" cy="5" rx="7" ry="2.4"/><path d="M5 5v14c0 1.3 3.1 2.4 7 2.4s7-1.1 7-2.4V5"/><path d="M5 12c0 1.3 3.1 2.4 7 2.4s7-1.1 7-2.4"/></svg>
+        </div>
+        <span id="pipe-label-dwh">Data Warehouse</span>
+      </div>
+      <div class="pipe-line"><span class="dot d1"></span><span class="dot d2"></span><span class="dot d3"></span></div>
+      <div class="pipe-node">
+        <div class="pipe-icon">
+          <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="4" y="12" width="4" height="8"/><rect x="10" y="7" width="4" height="13"/><rect x="16" y="3" width="4" height="17"/></svg>
+        </div>
+        <span id="pipe-label-bi">Power BI</span>
+      </div>
+    </div>
   </div>
 </section>
 
@@ -89,6 +120,24 @@
       <h2 data-i18n="experience.heading"></h2>
     </div>
     <div class="timeline reveal" id="timeline"></div>
+  </div>
+</section>
+
+<section id="education">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">05 / BACKGROUND</span>
+      <h2 data-i18n="education.heading"></h2>
+    </div>
+    <div class="education-grid reveal">
+      <div>
+        <div id="degree-list" class="degree-list"></div>
+      </div>
+      <div>
+        <div id="cert-list" class="cert-list"></div>
+        <div id="lang-list" class="lang-list"></div>
+      </div>
+    </div>
   </div>
 </section>
 

@@ -1,5 +1,5 @@
 /* ====== CHANGE THIS PASSWORD ====== */
-const EDITOR_PASSWORD = "changeme123";
+const EDITOR_PASSWORD = ChampionAnalyst;
 /* =================================== */
 
 let DATA = null;
@@ -34,12 +34,14 @@ function emptyLang() {
   return {
     meta: { title: "", tagline: "" },
     nav: { about: "About", skills: "Skills", projects: "Projects", experience: "Experience", contact: "Contact" },
-    hero: { eyebrow: "", name: "", role: "", subtitle: "", cta_primary: "", cta_secondary: "", stats: [] },
+    hero: { photo: "", eyebrow: "", name: "", role: "", subtitle: "", cta_primary: "", cta_secondary: "", stats: [] },
+    pipeline: { raw: "", dwh: "", bi: "" },
     about: { heading: "", body: "", resume_label: "", resume_file: "" },
     skills: { heading: "", groups: [] },
     projects: { heading: "", subheading: "", items: [] },
     experience: { heading: "", items: [] },
-    contact: { heading: "", body: "", email: "", linkedin: "", location: "" },
+    education: { heading: "", degrees: [], certifications: [], languages: [] },
+    contact: { heading: "", body: "", email: "", phone: "", linkedin: "", github: "", location: "" },
     footer: { text: "" }
   };
 }
@@ -74,12 +76,19 @@ function renderAll() {
   const d = DATA[currentLang];
 
   root.appendChild(section("Hero", [
+    field("Photo file path (upload the image to your site's /assets folder, then put the path here, e.g. assets/photo.jpg — leave blank to hide)", d.hero, "photo"),
     field("Eyebrow line (small text above name)", d.hero, "eyebrow"),
     field("Name", d.hero, "name"),
     field("Role / job title", d.hero, "role"),
     field("Subtitle", d.hero, "subtitle", true),
     field("Primary button text", d.hero, "cta_primary"),
     field("Secondary button text", d.hero, "cta_secondary"),
+  ]));
+
+  root.appendChild(section("Data pipeline graphic labels", [
+    field("Label 1 (Raw Data)", d.pipeline, "raw"),
+    field("Label 2 (Data Warehouse)", d.pipeline, "dwh"),
+    field("Label 3 (Power BI)", d.pipeline, "bi"),
   ]));
 
   root.appendChild(repeatableSection(
@@ -137,11 +146,47 @@ function renderAll() {
     () => ({ role: "", company: "", period: "", description: "" })
   ));
 
+  root.appendChild(section("Education & certifications — heading", [
+    field("Section heading", d.education, "heading"),
+  ]));
+  root.appendChild(repeatableSection(
+    "Degrees", d.education.degrees,
+    (item) => [
+      field2("Degree", item, "degree"),
+      field2("School", item, "school"),
+      field2("Period", item, "period"),
+    ],
+    () => ({ degree: "", school: "", period: "" })
+  ));
+  root.appendChild(section("Certifications (one per line)", [
+    (() => {
+      const wrap = document.createElement("div");
+      const label = document.createElement("label");
+      label.textContent = "Certifications — one per line";
+      const ta = document.createElement("textarea");
+      ta.value = (d.education.certifications || []).join("\n");
+      ta.style.minHeight = "100px";
+      ta.addEventListener("input", (e) => {
+        d.education.certifications = e.target.value.split("\n").map((s) => s.trim()).filter(Boolean);
+      });
+      wrap.appendChild(label);
+      wrap.appendChild(ta);
+      return wrap;
+    })(),
+  ]));
+  root.appendChild(repeatableSection(
+    "Languages", d.education.languages,
+    (item) => [field2("Language", item, "name"), field2("Level", item, "level")],
+    () => ({ name: "", level: "" })
+  ));
+
   root.appendChild(section("Contact", [
     field("Section heading", d.contact, "heading"),
     field("Short message", d.contact, "body", true),
     field("Email", d.contact, "email"),
+    field("Phone", d.contact, "phone"),
     field("LinkedIn URL", d.contact, "linkedin"),
+    field("GitHub URL", d.contact, "github"),
     field("Location", d.contact, "location"),
   ]));
 
@@ -150,6 +195,7 @@ function renderAll() {
     field("Skills", d.nav, "skills"),
     field("Projects", d.nav, "projects"),
     field("Experience", d.nav, "experience"),
+    field("Education", d.nav, "education"),
     field("Contact", d.nav, "contact"),
   ]));
 
