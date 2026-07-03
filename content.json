@@ -1,0 +1,204 @@
+{
+  "en": {
+    "meta": {
+      "title": "Rahul — Senior Data Analyst",
+      "tagline": "Data Analyst · Magdeburg, Germany"
+    },
+    "nav": {
+      "about": "About",
+      "skills": "Skills",
+      "projects": "Projects",
+      "experience": "Experience",
+      "contact": "Contact"
+    },
+    "hero": {
+      "eyebrow": "SELECT * FROM analyst WHERE impact = true;",
+      "name": "Rahul",
+      "role": "Senior Data Analyst",
+      "subtitle": "I turn messy business data into decisions — dashboards, pipelines and forecasts for retail, supply chain and finance teams.",
+      "cta_primary": "View projects",
+      "cta_secondary": "Get in touch",
+      "stats": [
+        { "value": "4+", "label": "years experience" },
+        { "value": "SQL / DAX / Python", "label": "core stack" },
+        { "value": "DE / EN", "label": "working languages" }
+      ]
+    },
+    "about": {
+      "heading": "About me",
+      "body": "I'm a data analyst based in Magdeburg, Germany, with hands-on experience across retail, e-commerce, supply chain and finance/controlling. I build the layer between raw data and good decisions — from SQL data warehouses to Power BI dashboards and forecasting models. Previously at Flink, BASF New Business and TCS Deutschland. I hold an M.Eng. in International Business and Engineering from SRH Hochschule Heidelberg, and I'm currently building my German toward C1.",
+      "resume_label": "Download CV",
+      "resume_file": ""
+    },
+    "skills": {
+      "heading": "Skills",
+      "groups": [
+        { "title": "Languages & Query", "items": ["SQL", "Python", "DAX"] },
+        { "title": "BI & Reporting", "items": ["Power BI", "SAP Analytics Cloud"] },
+        { "title": "Data Engineering", "items": ["dbt", "BigQuery", "SAP ERP"] },
+        { "title": "Other", "items": ["German (B2 → C1)", "English (Fluent)"] }
+      ]
+    },
+    "projects": {
+      "heading": "Projects",
+      "subheading": "A selection of end-to-end data work. Replace these with your real projects in the editor.",
+      "items": [
+        {
+          "title": "Modern Data Warehouse (MS SQL)",
+          "tag": "Data Engineering",
+          "description": "Designed and built an end-to-end SQL data warehouse with staging, star-schema modelling and SCD Type 2 handling for historical accuracy.",
+          "stack": ["SQL Server", "SSIS", "Star Schema"],
+          "link": ""
+        },
+        {
+          "title": "Retail KPI Dashboard",
+          "tag": "Business Intelligence",
+          "description": "Built a Power BI dashboard tracking OTIF, LIFR and VOFR logistics KPIs for supply chain stakeholders, cutting manual reporting time significantly.",
+          "stack": ["Power BI", "DAX", "SQL"],
+          "link": ""
+        },
+        {
+          "title": "Text-to-SQL AI Agent",
+          "tag": "AI / Automation",
+          "description": "A natural-language query assistant that translates plain English questions into SQL, letting non-technical stakeholders explore data directly.",
+          "stack": ["Python", "LLM APIs", "SQL"],
+          "link": ""
+        }
+      ]
+    },
+    "experience": {
+      "heading": "Experience",
+      "items": [
+        {
+          "role": "Data Analyst",
+          "company": "Flink",
+          "period": "20XX — 20XX",
+          "description": "Replace with your real responsibilities and measurable outcomes."
+        },
+        {
+          "role": "Data Analyst",
+          "company": "BASF New Business GmbH",
+          "period": "20XX — 20XX",
+          "description": "Replace with your real responsibilities and measurable outcomes."
+        },
+        {
+          "role": "Analyst",
+          "company": "TCS Deutschland",
+          "period": "20XX — 20XX",
+          "description": "Replace with your real responsibilities and measurable outcomes."
+        }
+      ]
+    },
+    "contact": {
+      "heading": "Let's work together",
+      "body": "Open to Senior Data Analyst roles and freelance data/BI projects across Germany and remotely.",
+      "email": "your.email@example.com",
+      "linkedin": "https://linkedin.com/in/your-profile",
+      "location": "Magdeburg, Germany"
+    },
+    "footer": {
+      "text": "Built by Rahul."
+    }
+  },
+  "de": {
+    "meta": {
+      "title": "Rahul — Senior Data Analyst",
+      "tagline": "Data Analyst · Magdeburg, Deutschland"
+    },
+    "nav": {
+      "about": "Über mich",
+      "skills": "Fähigkeiten",
+      "projects": "Projekte",
+      "experience": "Erfahrung",
+      "contact": "Kontakt"
+    },
+    "hero": {
+      "eyebrow": "SELECT * FROM analyst WHERE impact = true;",
+      "name": "Rahul",
+      "role": "Senior Data Analyst",
+      "subtitle": "Ich verwandle unübersichtliche Geschäftsdaten in klare Entscheidungen — Dashboards, Pipelines und Prognosen für Teams aus Handel, Supply Chain und Finance.",
+      "cta_primary": "Projekte ansehen",
+      "cta_secondary": "Kontakt aufnehmen",
+      "stats": [
+        { "value": "4+", "label": "Jahre Erfahrung" },
+        { "value": "SQL / DAX / Python", "label": "Kern-Skills" },
+        { "value": "DE / EN", "label": "Arbeitssprachen" }
+      ]
+    },
+    "about": {
+      "heading": "Über mich",
+      "body": "Ich bin Data Analyst mit Sitz in Magdeburg und praktischer Erfahrung in Handel, E-Commerce, Supply Chain und Finance/Controlling. Ich baue die Brücke zwischen Rohdaten und guten Entscheidungen — von SQL-Data-Warehouses über Power-BI-Dashboards bis hin zu Prognosemodellen. Zuvor bei Flink, BASF New Business und TCS Deutschland. Ich habe einen M.Eng. in International Business and Engineering von der SRH Hochschule Heidelberg und arbeite aktuell an meinem Deutsch auf C1-Niveau.",
+      "resume_label": "Lebenslauf herunterladen",
+      "resume_file": ""
+    },
+    "skills": {
+      "heading": "Fähigkeiten",
+      "groups": [
+        { "title": "Sprachen & Abfragen", "items": ["SQL", "Python", "DAX"] },
+        { "title": "BI & Reporting", "items": ["Power BI", "SAP Analytics Cloud"] },
+        { "title": "Data Engineering", "items": ["dbt", "BigQuery", "SAP ERP"] },
+        { "title": "Weitere", "items": ["Deutsch (B2 → C1)", "Englisch (Fließend)"] }
+      ]
+    },
+    "projects": {
+      "heading": "Projekte",
+      "subheading": "Eine Auswahl an End-to-End-Datenprojekten. Ersetze diese im Editor durch deine echten Projekte.",
+      "items": [
+        {
+          "title": "Modernes Data Warehouse (MS SQL)",
+          "tag": "Data Engineering",
+          "description": "Entwurf und Aufbau eines End-to-End SQL-Data-Warehouse mit Staging, Star-Schema-Modellierung und SCD Typ 2 für historische Genauigkeit.",
+          "stack": ["SQL Server", "SSIS", "Star Schema"],
+          "link": ""
+        },
+        {
+          "title": "Retail-KPI-Dashboard",
+          "tag": "Business Intelligence",
+          "description": "Power-BI-Dashboard zur Verfolgung von OTIF-, LIFR- und VOFR-Logistik-KPIs für Supply-Chain-Stakeholder, das den manuellen Reporting-Aufwand deutlich reduzierte.",
+          "stack": ["Power BI", "DAX", "SQL"],
+          "link": ""
+        },
+        {
+          "title": "Text-to-SQL KI-Agent",
+          "tag": "KI / Automatisierung",
+          "description": "Ein Sprachassistent, der natürlichsprachige Fragen in SQL übersetzt und so fachfremden Stakeholdern direkten Datenzugriff ermöglicht.",
+          "stack": ["Python", "LLM APIs", "SQL"],
+          "link": ""
+        }
+      ]
+    },
+    "experience": {
+      "heading": "Erfahrung",
+      "items": [
+        {
+          "role": "Data Analyst",
+          "company": "Flink",
+          "period": "20XX — 20XX",
+          "description": "Ersetze dies durch deine echten Aufgaben und messbaren Ergebnisse."
+        },
+        {
+          "role": "Data Analyst",
+          "company": "BASF New Business GmbH",
+          "period": "20XX — 20XX",
+          "description": "Ersetze dies durch deine echten Aufgaben und messbaren Ergebnisse."
+        },
+        {
+          "role": "Analyst",
+          "company": "TCS Deutschland",
+          "period": "20XX — 20XX",
+          "description": "Ersetze dies durch deine echten Aufgaben und messbaren Ergebnisse."
+        }
+      ]
+    },
+    "contact": {
+      "heading": "Lass uns zusammenarbeiten",
+      "body": "Offen für Senior-Data-Analyst-Positionen und freiberufliche Daten-/BI-Projekte in Deutschland und remote.",
+      "email": "your.email@example.com",
+      "linkedin": "https://linkedin.com/in/your-profile",
+      "location": "Magdeburg, Deutschland"
+    },
+    "footer": {
+      "text": "Erstellt von Rahul."
+    }
+  }
+}

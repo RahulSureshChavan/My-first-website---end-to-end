@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="robots" content="noindex, nofollow" />
+<title>Site Editor (private)</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root{--navy:#0F1B33;--gold:#A9812F;--line:#E3E0D6;--ink:#14181F;--soft:#4B5160;--paper:#FAF9F5;}
+  *{box-sizing:border-box;}
+  body{font-family:"Inter",sans-serif;background:var(--paper);color:var(--ink);margin:0;padding:0;}
+  #lock{max-width:360px;margin:120px auto;text-align:center;padding:36px;border:1px solid var(--line);}
+  #lock input{width:100%;padding:12px;font-size:15px;border:1px solid var(--line);margin:14px 0;}
+  #lock button, .btn{background:var(--navy);color:#fff;border:none;padding:12px 20px;font-size:14px;cursor:pointer;border-radius:2px;}
+  #app{display:none;max-width:920px;margin:0 auto;padding:40px 24px 120px;}
+  h1{font-size:22px;margin-bottom:4px;}
+  .note{color:var(--soft);font-size:13.5px;margin-bottom:28px;}
+  .tabs{display:flex;gap:8px;margin-bottom:28px;position:sticky;top:0;background:var(--paper);padding:12px 0;z-index:10;border-bottom:1px solid var(--line);}
+  .tabs button{padding:8px 16px;border:1px solid var(--line);background:#fff;cursor:pointer;font-family:"JetBrains Mono",monospace;font-size:12.5px;}
+  .tabs button.active{background:var(--navy);color:#fff;}
+  fieldset{border:1px solid var(--line);margin-bottom:24px;padding:20px;}
+  legend{font-family:"JetBrains Mono",monospace;font-size:12px;text-transform:uppercase;color:var(--gold);padding:0 8px;}
+  label{display:block;font-size:12.5px;color:var(--soft);margin:14px 0 5px;}
+  input[type=text], textarea{width:100%;padding:10px;border:1px solid var(--line);font-family:inherit;font-size:14px;}
+  textarea{min-height:70px;resize:vertical;}
+  .row{display:grid;grid-template-columns:1fr 1fr;gap:16px;}
+  .card{border:1px dashed var(--line);padding:16px;margin-bottom:14px;position:relative;}
+  .card button.remove{position:absolute;top:10px;right:10px;background:#c0392b;color:#fff;border:none;padding:4px 10px;font-size:11px;cursor:pointer;}
+  .add-btn{background:#fff;border:1px solid var(--navy);color:var(--navy);padding:8px 14px;font-size:13px;cursor:pointer;margin-top:8px;}
+  .bar{position:fixed;bottom:0;left:0;right:0;background:var(--navy);padding:14px 24px;display:flex;justify-content:center;gap:14px;z-index:20;}
+  .bar button{padding:12px 24px;font-size:14px;border:none;cursor:pointer;font-family:"JetBrains Mono",monospace;}
+  .bar .save{background:var(--gold);color:var(--navy);font-weight:600;}
+  .bar .load{background:transparent;color:#fff;border:1px solid #445;}
+  #fileInput{display:none;}
+  .lang-panel{display:none;}
+  .lang-panel.active{display:block;}
+  .hint{background:#FFF6E5;border:1px solid #EAD5A0;padding:10px 14px;font-size:13px;margin-bottom:20px;}
+</style>
+</head>
+<body>
+
+<div id="lock">
+  <h2>Editor access</h2>
+  <p class="note">Enter your editor password.</p>
+  <input type="password" id="pw" placeholder="Password" />
+  <br/>
+  <button onclick="tryUnlock()">Unlock</button>
+  <p class="note" id="lock-err" style="color:#c0392b;"></p>
+</div>
+
+<div id="app">
+  <h1>Site content editor</h1>
+  <p class="note">Edit your content below, then click "Download content.json" and replace the old file in your website folder / GitHub repo. Visitors never see this page unless they know the link — do not put it in your site's menu.</p>
+  <div class="hint">Nothing here saves automatically to your live site. You must download the file and upload it to where your site is hosted (see the launch guide Claude gave you).</div>
+
+  <div class="tabs">
+    <button data-tab="en" class="active" onclick="switchLang('en')">EN content</button>
+    <button data-tab="de" onclick="switchLang('de')">DE content</button>
+  </div>
+
+  <div id="editor-root"></div>
+</div>
+
+<input type="file" id="fileInput" accept="application/json" />
+<div class="bar" style="display:none" id="bar">
+  <button class="load" onclick="document.getElementById('fileInput').click()">Load a content.json</button>
+  <button class="save" onclick="downloadJSON()">⬇ Download content.json</button>
+</div>
+
+<script src="js/admin.js"></script>
+</body>
+</html>

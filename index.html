@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Rahul — Senior Data Analyst</title>
+<meta name="description" content="Data Analyst portfolio — SQL, Power BI, Python, dbt, BigQuery." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,500;0,600;1,500&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap header-inner">
+    <div class="brand" id="brand-name">Rahul</div>
+    <nav class="main-nav" id="main-nav">
+      <a href="#about" data-i18n="nav.about">About</a>
+      <a href="#skills" data-i18n="nav.skills">Skills</a>
+      <a href="#projects" data-i18n="nav.projects">Projects</a>
+      <a href="#experience" data-i18n="nav.experience">Experience</a>
+      <a href="#contact" data-i18n="nav.contact">Contact</a>
+      <div class="lang-toggle" role="group" aria-label="Language">
+        <button data-lang="en" class="active">EN</button>
+        <button data-lang="de">DE</button>
+      </div>
+    </nav>
+    <button class="nav-toggle-mobile" id="nav-toggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap">
+    <div class="hero-eyebrow eyebrow" data-i18n="hero.eyebrow">SELECT * FROM analyst WHERE impact = true;</div>
+    <h1>
+      <span id="hero-name">Rahul</span>
+      <span class="role" id="hero-role">Senior Data Analyst</span>
+    </h1>
+    <p class="hero-subtitle" data-i18n="hero.subtitle"></p>
+    <div class="hero-cta">
+      <a href="#projects" class="btn btn-primary" data-i18n="hero.cta_primary"></a>
+      <a href="#contact" class="btn btn-secondary" data-i18n="hero.cta_secondary"></a>
+    </div>
+    <div class="hero-stats" id="hero-stats"></div>
+  </div>
+</section>
+
+<section id="about">
+  <div class="wrap">
+    <div class="about-grid">
+      <div class="section-head reveal">
+        <span class="eyebrow">01 / ABOUT</span>
+        <h2 data-i18n="about.heading"></h2>
+      </div>
+      <div class="about-body reveal">
+        <p id="about-body"></p>
+        <a href="#" class="about-cv" id="about-cv" target="_blank" rel="noopener">↓ <span data-i18n="about.resume_label"></span></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="skills">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">02 / STACK</span>
+      <h2 data-i18n="skills.heading"></h2>
+    </div>
+    <div class="skills-grid reveal" id="skills-grid"></div>
+  </div>
+</section>
+
+<section id="projects">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">03 / SELECTED WORK</span>
+      <h2 data-i18n="projects.heading"></h2>
+      <p class="section-sub" data-i18n="projects.subheading"></p>
+    </div>
+    <div class="project-grid reveal" id="project-grid"></div>
+  </div>
+</section>
+
+<section id="experience">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">04 / CAREER</span>
+      <h2 data-i18n="experience.heading"></h2>
+    </div>
+    <div class="timeline reveal" id="timeline"></div>
+  </div>
+</section>
+
+<section id="contact" class="contact-section">
+  <div class="wrap">
+    <div class="contact-inner reveal">
+      <div>
+        <h2 id="contact-heading"></h2>
+        <p id="contact-body"></p>
+      </div>
+      <div class="contact-links" id="contact-links"></div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap" id="footer-text"></div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
