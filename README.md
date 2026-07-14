@@ -1,6 +1,6 @@
 # Rahul Suresh Chavan — Portfolio Website
 
-**Live site:** rahulsureshchavan.github.io/My-first-website-end-to-end/
+**Live site:** [rahulsureshchavan.github.io/My-first-website-end-to-end/](https://rahulsureshchavan.github.io/My-first-website-end-to-end/)
 
 A personal portfolio site showcasing my data analytics work to recruiters and freelance clients — directed and iterated by me, built in collaboration with Claude (Anthropic's AI assistant). No website builder, no template.
 
